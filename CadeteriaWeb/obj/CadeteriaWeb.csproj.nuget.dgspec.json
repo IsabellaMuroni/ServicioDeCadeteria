@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Backup Lenovo\\Disco D\\Facultad\\2022\\Taller de Lenguajes II\\TP_5\\tl2-tp5-2022-IsabellaMuroni\\CadeteriaWeb\\CadeteriaWeb.csproj": {}
+    "C:\\Users\\isa_s\\OneDrive\\Desktop\\Nueva carpeta\\Taller2-Práctica\\ServicioDeCadeteria\\CadeteriaWeb\\CadeteriaWeb.csproj": {}
   },
   "projects": {
-    "D:\\Backup Lenovo\\Disco D\\Facultad\\2022\\Taller de Lenguajes II\\TP_5\\tl2-tp5-2022-IsabellaMuroni\\CadeteriaWeb\\CadeteriaWeb.csproj": {
+    "C:\\Users\\isa_s\\OneDrive\\Desktop\\Nueva carpeta\\Taller2-Práctica\\ServicioDeCadeteria\\CadeteriaWeb\\CadeteriaWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Backup Lenovo\\Disco D\\Facultad\\2022\\Taller de Lenguajes II\\TP_5\\tl2-tp5-2022-IsabellaMuroni\\CadeteriaWeb\\CadeteriaWeb.csproj",
+        "projectUniqueName": "C:\\Users\\isa_s\\OneDrive\\Desktop\\Nueva carpeta\\Taller2-Práctica\\ServicioDeCadeteria\\CadeteriaWeb\\CadeteriaWeb.csproj",
         "projectName": "CadeteriaWeb",
-        "projectPath": "D:\\Backup Lenovo\\Disco D\\Facultad\\2022\\Taller de Lenguajes II\\TP_5\\tl2-tp5-2022-IsabellaMuroni\\CadeteriaWeb\\CadeteriaWeb.csproj",
-        "packagesPath": "C:\\Users\\Microsoft\\.nuget\\packages\\",
-        "outputPath": "D:\\Backup Lenovo\\Disco D\\Facultad\\2022\\Taller de Lenguajes II\\TP_5\\tl2-tp5-2022-IsabellaMuroni\\CadeteriaWeb\\obj\\",
+        "projectPath": "C:\\Users\\isa_s\\OneDrive\\Desktop\\Nueva carpeta\\Taller2-Práctica\\ServicioDeCadeteria\\CadeteriaWeb\\CadeteriaWeb.csproj",
+        "packagesPath": "C:\\Users\\isa_s\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\isa_s\\OneDrive\\Desktop\\Nueva carpeta\\Taller2-Práctica\\ServicioDeCadeteria\\CadeteriaWeb\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Microsoft\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\isa_s\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -57,7 +57,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -69,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.407\\RuntimeIdentifierGraph.json"
         }
       }
     }
