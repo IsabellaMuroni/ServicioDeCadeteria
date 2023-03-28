@@ -1,0 +1,42 @@
+@model CadeteriaWeb.ViewModels.EditarCadeteViewModel;
+
+<h2>Editar Cadete</h2>
+
+<div class="container">
+    
+    <div class="row justify-content-md-center">
+
+        <div class="col-8">
+            
+            <form class="row g-3" method = "post">
+
+                <div class="col-md-6">
+                    <label for = "inputName" class = "form-label" asp-for = "@Model.nombre">Nombre</label>
+                    @Html.DisplayFor(model => model.nombre)
+                    <input type = "text" class = "form-control" id = "inputEmail4" asp-for = "@Model.nombre" />
+                    <span asp-validation-for="nombre" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputTelefono" class="form-label" asp-for="@Model.telefono">Teléfono</label>
+                    <input type="number" class="form-control" id="inputPassword4" asp-for="@Model.telefono">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label" asp-for="@Model.direccion">Dirección</label>
+                    <input type="text" class="form-control" id="inputAddress" asp-for="@Model.direccion">
+                </div>
+            
+                <div class="col-12">
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-primary" type="submit">Guardar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-4">
+            <img src="~/images/foto1.jpg" class="img" alt="My image" width="50%" />
+        </div>
+
+    </div>
+
+</div>

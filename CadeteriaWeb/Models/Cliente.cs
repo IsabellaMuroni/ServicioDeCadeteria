@@ -9,14 +9,14 @@ namespace CadeteriaWeb.Models
     {
         private int id;
         private string nombre;
-        private string apellido;
+        //private string apellido;
         private string direccion;
         private int telefono;
         private string datosReferenciaDireccion;
 
         public int Id { get => id; set => id = value; }
         public string Nombre { get => nombre; set => nombre = value; }
-        public string Apellido { get => apellido; set => apellido = value; }
+        //public string Apellido { get => apellido; set => apellido = value; }
         public string Direccion { get => direccion; set => direccion = value; }
         public int Telefono { get => telefono; set => telefono = value; }
         public string DatosReferenciaDireccion { get => datosReferenciaDireccion; set => datosReferenciaDireccion = value; }
@@ -24,11 +24,11 @@ namespace CadeteriaWeb.Models
         //Constructores
         public Cliente (){}
 
-        public Cliente (string nombre, string apellido, string dir, int tel, string datosRefDir)
+        public Cliente (string nombre, string dir, int tel, string datosRefDir)
         {
             //this.id = id;
             this.nombre = nombre;
-            this.apellido = apellido;
+            //this.apellido = apellido;
             this.direccion = dir;
             this.telefono = tel;
             this.datosReferenciaDireccion = datosRefDir;

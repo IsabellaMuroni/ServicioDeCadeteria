@@ -1,0 +1,12 @@
+@model CadeteriaWeb.ViewModels.EliminarCadeteViewModel;
+
+@{
+    ViewData["Title"] = "Eliminar Cadete";
+}
+
+<p>¿Está seguro que quiere eliminar a <strong>@Model.nombre</strong> | ID: <strong>@Model.id</strong>?</p>
+<form asp-action="EliminarCadete" class="form-row align-items-center">
+    <input type="hidden" asp-for="id" />
+    <input type="submit" value="Confirmar" class="btn btn-danger" />  
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

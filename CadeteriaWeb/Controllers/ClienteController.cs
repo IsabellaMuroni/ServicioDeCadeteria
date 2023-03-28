@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 
 namespace CadeteriaWeb.Controllers
 {
-    [Route("[controller]")]
+    //[Route("[controller]")]
     public class ClienteController : Controller
     {
         private readonly ILogger<ClienteController> _logger;
@@ -18,7 +18,7 @@ namespace CadeteriaWeb.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult AltaCliente ()
         {
             return View();
         }

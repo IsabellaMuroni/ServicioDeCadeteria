@@ -2,23 +2,40 @@
 
 <h2>Alta Cadete</h2>
 
-<form class="row g-3" method = "post">
-  <div class="col-md-6">
-    <label for="inputName" class="form-label"asp-for="@Model.nombreCadete"></label></label>
-    <input type="text" class="form-control" id="inputEmail4" asp-for="@Model.nombreCadete">
-  </div>
-  <div class="col-md-6">
-    <label for="inputTelefono" class="form-label" asp-for="@Model.Telefono">Teléfono</label>
-    <input type="number" class="form-control" id="inputPassword4" asp-for="@Model.Telefono">
-  </div>
-  <div class="col-12">
-    <label for="inputAddress" class="form-label" asp-for="@Model.Direccion">Dirección</label>
-    <input type="text" class="form-control" id="inputAddress" asp-for="@Model.Direccion" placeholder="1234 Main St">
-  </div>
-  
-  <div class="col-12">
-    <div class="d-grid gap-2 col-6 mx-auto">
-        <button class="btn btn-primary" type="submit">Crear Cadete</button>
+<div class="container">
+    
+    <div class="row justify-content-md-center">
+
+      <div class="col-4">
+        <img src="~/images/foto2.jpg" class="img" alt="My image" width="50%" />
+      </div>
+      
+      <div class="col-8">
+
+        <form class="row g-3" asp-controller = "Cadete" asp-action="AltaCadete" method = "post">
+
+          <div class="col-md-6">
+            <label for="inputName" class="form-label" asp-for="@Model.nombre"></label></label>
+            <input type="text" class="form-control" id="inputEmail4" asp-for="@Model.nombre">
+          </div>
+          <div class="col-md-6">
+            <label for="inputTelefono" class="form-label" asp-for="@Model.telefono">Teléfono</label>
+            <input type="number" class="form-control" id="inputPassword4" asp-for="@Model.telefono">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label" asp-for="@Model.direccion">Dirección</label>
+            <input type="text" class="form-control" id="inputAddress" asp-for="@Model.direccion" placeholder="1234 Main St">
+          </div>
+            
+          <div class="col-12">
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary" type="submit">Crear Cadete</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+
     </div>
-  </div>
-</form>
+
+</div>

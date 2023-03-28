@@ -4,13 +4,9 @@ namespace CadeteriaWeb.ViewModels
 {
     public class EliminarCadeteViewModel
     {
-        [Required][StringLength(100)][Display (Name = "Nombre del Cadete")]
-        public string nombreCadete { get; set; }
-       
-        [Required][StringLength(120)][Display (Name = "Dirección")]
-        public string Direccion { get; set; }
-
-        [Required][Phone]
-        public int Telefono { get; set; }
+        [Required]
+        public int id { get; set; }
+        
+        public string nombre { get; set; }
     }
 }

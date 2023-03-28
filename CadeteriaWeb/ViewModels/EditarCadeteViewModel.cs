@@ -4,13 +4,18 @@ namespace CadeteriaWeb.ViewModels
 {
     public class EditarCadeteViewModel
     {
+        public int id { get; set; }
+        
         [Required][StringLength(100)][Display (Name = "Nombre del Cadete")]
-        public string nombreCadete { get; set; }
+        public string nombre { get; set; }
        
         [Required][StringLength(120)][Display (Name = "Dirección")]
-        public string Direccion { get; set; }
+        public string direccion { get; set; }
 
         [Required][Phone]
-        public int Telefono { get; set; }
+        public int telefono { get; set; }
     }
 }
+/* Los ViewModels deben tener los nombres 
+    de los atributos en modo público. No requieren constructores
+*/

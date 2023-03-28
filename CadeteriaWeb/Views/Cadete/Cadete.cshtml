@@ -1,18 +1,25 @@
+@model List<CadeteriaWeb.ViewModels.MostrarCadetesViewModel>;
 @{
-    ViewData["Title"] = "Cadetes";
+    ViewData["Title"] = "Lista de Cadetes";
 }
 
-<h1>Lista de Cadetes</h1>
-
-<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-  <div class="btn-group me-2" role="group" aria-label="First group">
-    <button type="button" class="btn btn-primary">Crear Cadete</button>
-  </div>
+<div class="row">
+    <div class="col-8"><h1>Lista de Cadetes</h1></div>
+    <div class="col-4">
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group me-2" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-success">
+            <a asp-action="AltaCadete"><i class="bi bi-person-plus" style="font-size: 2rem;"></i></a>
+          </button>
+        </div>
+      </div>
+    </div>
 </div>
- 
+
 <table class="table">
   <thead>
     <tr>
+      <th scope="col">Id</th>
       <th scope="col">Nombre</th>
       <th scope="col">Dirección</th>
       <th scope="col">Teléfono</th>
@@ -20,14 +27,19 @@
     </tr>
   </thead>
   <tbody class="table-group-divider">
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>
-        <i class="bi bi-pencil" style="color: cornflowerblue; margin: 0.5em"></i>
-        <i class="bi bi-trash" style="color: red;"></i>
-      </td>
-    </tr>
+     @foreach (var item in Model)
+     {
+        <tr>
+          <td>@item.id</td>
+          <td>@item.nombre</td>
+          <td>@item.direccion</td>
+          <td>@item.telefono</td>
+          <td>
+             <a asp-action="EditarCadete" asp-route-id="@item.id"><i class="bi bi-pencil" style="color: cornflowerblue; margin: 0.5em"></i></a>
+            <a asp-action="Eliminar_Cadete" asp-route-id="@item.id"><i class="bi bi-trash" style="color: red;"></i></a>
+          </td>
+        </tr>
+
+     }
   </tbody>
 </table>

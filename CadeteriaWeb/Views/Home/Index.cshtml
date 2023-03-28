@@ -1,8 +1,24 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home Cadeteria Web";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <img src="~/images/foto.jpg" class="img" alt="My image" width="50%" />
+
+    <h1 class="display-4">Cadeteria Web</h1>
+    <!--<a asp-area="" asp-controller="Cadeteria" asp-action="Cadeteria">CadeteriaWeb</a>-->
+
+    <button type="button" class="btn btn-outline-primary">Pedido</button>
+
+    <button type="button" class="btn btn-outline-primary">
+        <a asp-area="" asp-controller="Cadete" asp-action="Cadete">Cadetes</a>
+    </button>
+
+    <button type="button" class="btn btn-outline-primary">
+        <a asp-area="" asp-controller="Cliente" asp-action="Cliente">Clientes</a>
+    </button>
+
+    <button type="button" class="btn btn-outline-info">Info</button>
+
 </div>

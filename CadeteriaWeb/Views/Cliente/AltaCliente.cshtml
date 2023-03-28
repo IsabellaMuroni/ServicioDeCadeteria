@@ -1,0 +1,46 @@
+@model CadeteriaWeb.ViewModels.Cliente.AltaClienteViewModel;
+
+<h2>Nuevo Cliente</h2>
+
+<div class="container">
+    
+    <div class="row justify-content-md-center">
+
+      <div class="col-4">
+        <img src="~/images/foto2.jpg" class="img" alt="My image" width="50%" />
+      </div>
+      
+      <div class="col-8">
+
+        <form class="row g-3" asp-controller = "Cliente" asp-action="AltaCliente" method = "post">
+
+            <div class="col-md-6">
+                <label for="inputName" class="form-label" asp-for="@Model.Nombre"></label></label>
+                <input type="text" class="form-control" id="inputEmail4" asp-for="@Model.Nombre">
+            </div>
+            <div class="col-md-6">
+                <label for="inputTelefono" class="form-label" asp-for="@Model.Telefono">Teléfono</label>
+                <input type="number" class="form-control" id="inputPassword4" asp-for="@Model.Telefono">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label" asp-for="@Model.Direccion">Dirección</label>
+                <input type="text" class="form-control" id="inputAddress" asp-for="@Model.Direccion" placeholder="1234 Main St">
+            </div>
+                
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label" asp-for="@Model.DatosReferenciaDireccion">Observaciones</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" asp-for="@Model.DatosReferenciaDireccion" rows="3"></textarea>
+            </div>
+
+            <div class="col-12">
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary" type="submit">CREAR</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+
+</div>

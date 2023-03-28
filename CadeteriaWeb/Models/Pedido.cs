@@ -28,14 +28,13 @@ namespace CadeteriaWeb.Models
 
         public Pedido (string obs_,
                        string nombre,
-                       string apellido,
                        string dir,
                        int tel,
                        string datosRefDir)
         {
             this.OBS = obs_;
             this.Estado = false;
-            this.Cliente = new Cliente (nombre, apellido, dir, tel, datosRefDir);
+            this.Cliente = new Cliente (nombre,dir, tel, datosRefDir);
         }
     }
 }
