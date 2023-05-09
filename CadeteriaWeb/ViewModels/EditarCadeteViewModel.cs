@@ -4,6 +4,7 @@ namespace CadeteriaWeb.ViewModels
 {
     public class EditarCadeteViewModel
     {
+        [Required]
         public int id { get; set; }
         
         [Required][StringLength(100)][Display (Name = "Nombre del Cadete")]

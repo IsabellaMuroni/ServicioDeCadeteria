@@ -4,9 +4,19 @@
     ViewData["Title"] = "Eliminar Cadete";
 }
 
-<p>¿Está seguro que quiere eliminar a <strong>@Model.nombre</strong> | ID: <strong>@Model.id</strong>?</p>
-<form asp-action="EliminarCadete" class="form-row align-items-center">
-    <input type="hidden" asp-for="id" />
-    <input type="submit" value="Confirmar" class="btn btn-danger" />  
-    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
-</form>
+<div class="container-md">
+
+  <p class="card-text">¿Está seguro que quiere eliminar a <strong>@Model.nombre</strong> | ID: <strong>@Model.id</strong>?.</p>
+        <form class="row g-3" asp-action = "DeleteCadete" class="form-row align-items-center">
+
+          <input type="hidden" name="id" asp-for="id"/>
+                  
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button class="btn-confirm" type="submit">Eliminar</button>
+              <a asp-action="Cadete" class="btn-cancel">Cancelar</a>
+            </div>
+                    
+                  
+        </form>
+        
+</div>

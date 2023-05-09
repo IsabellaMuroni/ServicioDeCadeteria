@@ -16,3 +16,89 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.navbar{
+  background-color: #F24B59 !important;
+  color: #f2f2f2;
+}
+
+h1{
+  color: #A62E38;
+}
+
+.btn-inicio {
+  background-color: #203A40;
+  color: #f2f2f2;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin: 4px 2px;
+  display: inline-block;
+}
+
+.btn-inicio:hover {
+  background-color: #F24B59;
+  color: #f2f2f2;
+}
+.btn-inicio a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+.btn-inicio a:hover {
+  background-color: #F24B59;
+  color: #f2f2f2;
+}
+.iniciar-sesion{
+  background-color: #203A40;
+  color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 25px;
+}
+.iniciar-sesion:hover {
+  background-color: #F24B59;
+  color: #203A40;
+  border: 1px solid #203A40;
+}
+.iniciar-sesion a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+.iniciar-sesion a:hover {
+  background-color: #F24B59;
+  color: #203A40;
+  border: 1px solid #203A40;
+}
+.iniciar-sesion, .sesionActiva{
+  display: inline-flexbox;
+}
+.sesionActiva{
+  display: flex;
+  background-color: #203A40;
+  border: none;
+  border-radius: 8px;
+  padding: 1px 5px;
+  margin: 4px 2px;
+  justify-content: center;
+}
+.btn-cancel, .btn-confirm{
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin: 2px 2px;
+ 
+}
+.btn-confirm{
+  background-color: #203A40;
+  color: #f2f2f2;
+}
+
+.btn-cancel{
+  background-color: #F24B59;
+  color: #f2f2f2;
+}
+
+#delete{
+  font-size: 25px;
+}

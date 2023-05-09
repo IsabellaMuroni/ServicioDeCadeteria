@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using CadeteriaWeb.Models;
 using CadeteriaWeb.ViewModels;
 using CadeteriaWeb.ViewModels.Cliente;
+using CadeteriaWeb.ViewModels.Usuario;
 using AutoMapper;
 
 namespace CadeteriaWeb.Mapper
@@ -23,6 +24,7 @@ namespace CadeteriaWeb.Mapper
             //CreateMap<Cliente, MostrarClienteViewModel>().ReverseMap();
             // CreateMap<Cliente, EditarClienteViewModel>().ReverseMap();
             // CreateMap<Cliente, EliminarClienteViewModel>().ReverseMap();
+            CreateMap<Usuario, LoginViewModel>().ReverseMap();
         }
         
     }

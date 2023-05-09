@@ -8,7 +8,7 @@
     <div class="col-4">
       <div class="d-grid gap-2 d-md-flex justify-content-md-end" role="toolbar" aria-label="Toolbar with button groups">
         <div class="btn-group me-2" role="group" aria-label="First group">
-          <button type="button" class="btn btn-outline-success">
+          <button type="button" class = "btn-inicio">
             <a asp-action="AltaCadete"><i class="bi bi-person-plus" style="font-size: 2rem;"></i></a>
           </button>
         </div>
@@ -35,11 +35,10 @@
           <td>@item.direccion</td>
           <td>@item.telefono</td>
           <td>
-             <a asp-action="EditarCadete" asp-route-id="@item.id"><i class="bi bi-pencil" style="color: cornflowerblue; margin: 0.5em"></i></a>
-            <a asp-action="Eliminar_Cadete" asp-route-id="@item.id"><i class="bi bi-trash" style="color: red;"></i></a>
+            <a asp-action="EditarCadete" asp-route-id="@item.id"><i class="bi bi-pencil" style="color: cornflowerblue; margin: 0.5em"></i></a>
+            <a asp-action="EliminarCadete" asp-route-id="@item.id"><i class="bi bi-trash" style="color: red;"></i></a>
           </td>
         </tr>
-
      }
   </tbody>
 </table>

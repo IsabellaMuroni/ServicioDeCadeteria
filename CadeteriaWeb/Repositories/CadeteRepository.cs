@@ -7,9 +7,11 @@ using CadeteriaWeb.ViewModels;
 using System.Data.SQLite;
 using AutoMapper;
 using CadeteriaWeb.Mapper;
+using CadeteriaWeb.Interfaces;
 
 namespace CadeteriaWeb.Repositories
 {
+    /*
     public interface ICadeteRepository
     {
         Cadete GetCadete(int idCadete);
@@ -17,16 +19,34 @@ namespace CadeteriaWeb.Repositories
         void Insert (Cadete cadete);
         void Update (Cadete cadete);
         void Delete (int idCadete);
-    } 
+    } */
 
     public class CadeteRepository : ICadeteRepository
     {
+        private readonly string _cadenaDeConexion;
+        private readonly ILogger<CadeteRepository> _logger;
+        public CadeteRepository(ICadenaDeConexionRepository cadenaDeConexion, ILogger<CadeteRepository> logger)
+        {
+            this._cadenaDeConexion = cadenaDeConexion.GetCadena();
+            this._logger = logger;
+        }
+
+        private SQLiteConnection GetConnection()
+        {
+            var connection = new SQLiteConnection(_cadenaDeConexion);
+            connection.Open();
+
+            return connection;
+        }
         public Cadete GetCadete(int idCadete)
         {
+            /*
             var cadenaDeConexion = @"Data Source = DB\Pedidos_DB.db; Version = 3;";
             var connection = new SQLiteConnection(cadenaDeConexion);
 
-            connection.Open();
+            connection.Open();*/
+
+            var connection = GetConnection();
 
             //Consulta
             var queryString = $"select * from Cadete where id_cadete = {idCadete};";
@@ -56,10 +76,12 @@ namespace CadeteriaWeb.Repositories
             var telefono_ = cadete.telefono;
             var direccion_ = cadete.direccion;
 
-            var cadenaDeConexion = @"Data Source = DB\Pedidos_DB.db; Version = 3;";
+            /*var cadenaDeConexion = @"Data Source = DB\Pedidos_DB.db; Version = 3;";
             var connection = new SQLiteConnection(cadenaDeConexion);
 
-            connection.Open();
+            connection.Open();*/
+
+            var connection = GetConnection();
 
             //Consulta
             var queryString = "insert into Cadete (nombre, telefono, direccion)" + " values ('"+nombre_+"','"+telefono_+"','"+direccion_+"');";
@@ -72,10 +94,12 @@ namespace CadeteriaWeb.Repositories
 
         public void Update (Cadete cadete)
         {
-            var cadenaDeConexion = @"Data Source = DB\Pedidos_DB.db; Version = 3;";
+           /* var cadenaDeConexion = @"Data Source = DB\Pedidos_DB.db; Version = 3;";
             var connection = new SQLiteConnection(cadenaDeConexion);
 
-            connection.Open();
+            connection.Open();*/
+
+            var connection = GetConnection();
 
             var id = cadete.id;
             var _nombre = cadete.nombre;
@@ -93,10 +117,12 @@ namespace CadeteriaWeb.Repositories
 
         public void Delete (int id)
         {
-            var cadenaDeConexion = @"Data Source = DB\Pedidos_DB.db; Version = 3;";
+            /*var cadenaDeConexion = @"Data Source = DB\Pedidos_DB.db; Version = 3;";
             var connection = new SQLiteConnection(cadenaDeConexion);
 
-            connection.Open();
+            connection.Open();*/
+
+            var connection = GetConnection();
 
             //Consulta
             var queryString = $"delete from Cadete where id_cadete = '{id}';";
@@ -112,10 +138,12 @@ namespace CadeteriaWeb.Repositories
             List<Cadete> cadetes = new List<Cadete>();
             //List<MostrarCadetesViewModel> cadetes = new List<MostrarCadetesViewModel>();
 
-            var cadenaDeConexion = @"Data Source = DB\Pedidos_DB.db; Version = 3;";
+            /*var cadenaDeConexion = @"Data Source = DB\Pedidos_DB.db; Version = 3;";
             var connection = new SQLiteConnection(cadenaDeConexion);
 
-            connection.Open();
+            connection.Open();*/
+
+            var connection = GetConnection();
 
             var queryString = "select * from Cadete;";//Consulta
             var comando = new SQLiteCommand(queryString, connection);

@@ -1,12 +1,23 @@
 using CadeteriaWeb.Repositories;
+using CadeteriaWeb.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.AddSingleton<ICadenaDeConexionRepository, ConexionSQLiteRepository>();
 builder.Services.AddTransient<ICadeteRepository, CadeteRepository>();
+builder.Services.AddTransient<IUsuarioRepository, UsuarioRepository>();
 
+//Código para sesiones
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession( options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(60);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 
 var app = builder.Build();
 
@@ -24,6 +35,9 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+//Para sesiones
+app.UseSession();
 
 app.MapControllerRoute(
     name: "default",

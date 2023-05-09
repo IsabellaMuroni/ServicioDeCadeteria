@@ -27,10 +27,11 @@
             <input type="text" class="form-control" id="inputAddress" asp-for="@Model.direccion" placeholder="1234 Main St">
           </div>
             
-          <div class="col-12">
-            <div class="d-grid gap-2 col-6 mx-auto">
-                <button class="btn btn-primary" type="submit">Crear Cadete</button>
-            </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+
+                <button class="btn-confirm" type="submit">Crear Cadete</button>
+                <a asp-action="Cadete" class="btn-cancel">Cancelar</a>
+           
           </div>
         </form>
 

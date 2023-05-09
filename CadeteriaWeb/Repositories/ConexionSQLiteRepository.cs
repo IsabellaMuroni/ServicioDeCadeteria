@@ -6,22 +6,24 @@ using CadeteriaWeb.Repositories;
 using System.Data.SQLite;
 using AutoMapper;
 using CadeteriaWeb.Mapper;
+using CadeteriaWeb.Interfaces;
 
 
 namespace CadeteriaWeb.Repositories
 {
-    public interface IConexion
+    public class ConexionSQLiteRepository: ICadenaDeConexionRepository
     {
-        SQLiteConnection GetConexion();
-    }
-    public class ConexionSQLiteRepository: IConexion
-    {
-        public SQLiteConnection GetConexion()
-        {
-            var cadenaDeConexion = @"Data Source = DB\Pedidos_DB.db; Version = 3;";
-            var connection = new SQLiteConnection(cadenaDeConexion);
+        //Para que lea el jason de la cadena
+        private readonly IConfiguration _configuration;
 
-            return connection;
-        }       
+        public ConexionSQLiteRepository (IConfiguration configuration)
+        {
+            this._configuration = configuration;
+        }   
+
+        public string GetCadena()
+        {
+            return _configuration.GetConnectionString("SQLite");
+        }    
     }
 }

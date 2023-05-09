@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CRTQhUWtnbob3XusS077xMQwrOW3HxheA82IG+lPEU0=",
+  "Hash": "qrYmQWYfntL0tfHD/d64LPIYvda9k9GbOBMS53rJmMU=",
   "Source": "CadeteriaWeb",
   "BasePath": "_content/CadeteriaWeb",
   "Mode": "Default",
@@ -134,6 +134,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\foto2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\isa_s\\OneDrive\\Desktop\\Nueva carpeta\\Taller2-Práctica\\ServicioDeCadeteria\\CadeteriaWeb\\wwwroot\\images\\login.jpg",
+      "SourceId": "CadeteriaWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\isa_s\\OneDrive\\Desktop\\Nueva carpeta\\Taller2-Práctica\\ServicioDeCadeteria\\CadeteriaWeb\\wwwroot\\",
+      "BasePath": "_content/CadeteriaWeb",
+      "RelativePath": "images/login.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\login.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\isa_s\\OneDrive\\Desktop\\Nueva carpeta\\Taller2-Práctica\\ServicioDeCadeteria\\CadeteriaWeb\\wwwroot\\images\\logo.jpg",
+      "SourceId": "CadeteriaWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\isa_s\\OneDrive\\Desktop\\Nueva carpeta\\Taller2-Práctica\\ServicioDeCadeteria\\CadeteriaWeb\\wwwroot\\",
+      "BasePath": "_content/CadeteriaWeb",
+      "RelativePath": "images/logo.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo.jpg"
     },
     {
       "Identity": "C:\\Users\\isa_s\\OneDrive\\Desktop\\Nueva carpeta\\Taller2-Práctica\\ServicioDeCadeteria\\CadeteriaWeb\\wwwroot\\js\\site.js",

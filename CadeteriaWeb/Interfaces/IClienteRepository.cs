@@ -8,7 +8,7 @@ using System.Data.SQLite;
 using AutoMapper;
 using CadeteriaWeb.Mapper;
 
-namespace CadeteriaWeb.Repositories
+namespace CadeteriaWeb.Interfaces
 {
     public interface IClienteRepository
     {
