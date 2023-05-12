@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "++O2tSXRUOlzc1reFPIYmQ6fGPFJ219KdLQHtnBvx4hAYf1j9gLdrjlOieyxUAjiGj+bsNJwtDnrz0qbldHClw==",
+  "dgSpecHash": "Fwnuxa9c0sxx9P/+DD0r5qeUVMZlYY29YlltGeCX58QljN36w6WUNABHDiZ0G9ABfaNoO3VHrALxdCgIjV8UFA==",
   "success": true,
   "projectFilePath": "C:\\Users\\isa_s\\OneDrive\\Desktop\\Nueva carpeta\\Taller2-Práctica\\ServicioDeCadeteria\\CadeteriaWeb\\CadeteriaWeb.csproj",
   "expectedPackageFiles": [
@@ -27,6 +27,7 @@
     "C:\\Users\\isa_s\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\isa_s\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\isa_s\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\isa_s\\.nuget\\packages\\nlog\\5.1.4\\nlog.5.1.4.nupkg.sha512",
     "C:\\Users\\isa_s\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\isa_s\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\isa_s\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

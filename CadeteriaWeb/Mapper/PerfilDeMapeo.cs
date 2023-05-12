@@ -21,9 +21,9 @@ namespace CadeteriaWeb.Mapper
             CreateMap<Cadete, EliminarCadeteViewModel>().ReverseMap();
             //Clientes: alta, baja, modificación
             CreateMap<Cliente, AltaClienteViewModel>().ReverseMap();
-            //CreateMap<Cliente, MostrarClienteViewModel>().ReverseMap();
-            // CreateMap<Cliente, EditarClienteViewModel>().ReverseMap();
-            // CreateMap<Cliente, EliminarClienteViewModel>().ReverseMap();
+            CreateMap<Cliente, MostrarClientesViewModel>().ReverseMap();
+            CreateMap<Cliente, EditarClienteViewModel>().ReverseMap();
+            CreateMap<Cliente, EliminarClienteViewModel>().ReverseMap();
             CreateMap<Usuario, LoginViewModel>().ReverseMap();
         }
         

@@ -13,9 +13,9 @@ namespace CadeteriaWeb.Interfaces
     public interface IClienteRepository
     {
         Cliente GetCliente (int idCliente);
-        //List<Cliente> GetClientes();
-        //void Insert (Cliente cliente);
-        //void Update (Cliente cliente);
-        //void Delete (int idCliente);
+        List<Cliente> GetClientes();
+        void Insert (Cliente cliente);
+        void Update (Cliente cliente);
+        void Delete (int idCliente);
     }
 }

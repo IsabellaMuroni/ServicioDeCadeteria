@@ -1,16 +1,16 @@
-@model List<CadeteriaWeb.ViewModels.MostrarCadetesViewModel>;
+@model List<CadeteriaWeb.ViewModels.Cliente.MostrarClientesViewModel>;
 @{
-    ViewData["Title"] = "Lista de Cadetes";
+    ViewData["Title"] = "Lista de Clientes";
     string rolUsuario = Context.Session.GetString("rolUsuario");
 }
 
 <div class="row">
-    <div class="col-8"><h1>Lista de Cadetes</h1></div>
+    <div class="col-8"><h1>Lista de Clientes</h1></div>
     <div class="col-4">
       <div class="d-grid gap-2 d-md-flex justify-content-md-end" role="toolbar" aria-label="Toolbar with button groups">
         <div class="btn-group me-2" role="group" aria-label="First group">
           <button type="button" class = "btn-inicio">
-            <a asp-action="AltaCadete"><i class="bi bi-person-plus" style="font-size: 2rem;"></i></a>
+            <a asp-action="AltaCliente"><i class="bi bi-person-plus" style="font-size: 2rem;"></i></a>
           </button>
         </div>
       </div>
@@ -24,6 +24,7 @@
       <th scope="col">Nombre</th>
       <th scope="col">Dirección</th>
       <th scope="col">Teléfono</th>
+      <th scope="col">Referencias</th>
       <th scope="col">Acciones</th>
     </tr>
   </thead>
@@ -31,13 +32,14 @@
      @foreach (var item in Model)
      {
         <tr>
-          <td>@item.id</td>
-          <td>@item.nombre</td>
-          <td>@item.direccion</td>
-          <td>@item.telefono</td>
+          <td>@item.Id</td>
+          <td>@item.Nombre</td>
+          <td>@item.Direccion</td>
+          <td>@item.Telefono</td>
+          <td>@item.DatosReferenciaDireccion</td>
           <td>
-            <a asp-action="EditarCadete" asp-route-id="@item.id"><i class="bi bi-pencil" style="color: cornflowerblue; margin: 0.5em"></i></a>
-            <a asp-action="EliminarCadete" asp-route-id="@item.id"><i class="bi bi-trash" style="color: red;"></i></a>
+            <a asp-action = "EditarCliente" asp-route-id="@item.Id"><i class="bi bi-pencil" style="color: cornflowerblue; margin: 0.5em"></i></a>
+            <a asp-action = "EliminarCliente" asp-route-id="@item.Id"><i class="bi bi-trash" style="color: red;"></i></a>
           </td>
         </tr>
      }

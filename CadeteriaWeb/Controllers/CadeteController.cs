@@ -41,7 +41,7 @@ namespace CadeteriaWeb.Controllers
                 //Control para usuario logueado
                 if(HttpContext.Session.GetString("rolUsuario") == null)
                 {
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Logueo", "Logueo");
                 }
                 
                 var cadetes = _repoCadete.GetCadetes();
@@ -72,10 +72,25 @@ namespace CadeteriaWeb.Controllers
         [HttpPost]
         public IActionResult AltaCadete (AltaCadeteViewModel nuevoCadeteVM)
         {
-            
+            try
+            {
+                //Controlo logueo y usuario autorizado
+                string rolUser = HttpContext.Session.GetString("rolUsuario");
+                if(rolUser == null || rolUser == "cadete")
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+                
                 var nuevoCadete = _mapper.Map<Cadete>(nuevoCadeteVM);
                 _repoCadete.Insert(nuevoCadete);
+                
                 return RedirectToAction("Cadete");
+            }
+            catch (SystemException ex)
+            {
+                _logger.LogWarning(ex, "No se pudo guardar el cadete");
+                return View("/Views/Home/Error.cshtml");
+            }
             
         }
 

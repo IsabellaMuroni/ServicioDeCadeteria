@@ -398,6 +398,19 @@
           }
         }
       },
+      "NLog/5.1.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NLog.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -1261,6 +1274,30 @@
         "version.txt"
       ]
     },
+    "NLog/5.1.4": {
+      "sha512": "Ki0XThITEd//RrQ21yi1HB/Uid4pzTRE5YLvEpk91d0vDXp3OPtVCvWgrYsqqcpTwiipFSOLSsU1RblaexrFiA==",
+      "type": "package",
+      "path": "nlog/5.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "N.png",
+        "lib/net35/NLog.dll",
+        "lib/net35/NLog.xml",
+        "lib/net45/NLog.dll",
+        "lib/net45/NLog.xml",
+        "lib/net46/NLog.dll",
+        "lib/net46/NLog.xml",
+        "lib/netstandard1.3/NLog.dll",
+        "lib/netstandard1.3/NLog.xml",
+        "lib/netstandard1.5/NLog.dll",
+        "lib/netstandard1.5/NLog.xml",
+        "lib/netstandard2.0/NLog.dll",
+        "lib/netstandard2.0/NLog.xml",
+        "nlog.5.1.4.nupkg.sha512",
+        "nlog.nuspec"
+      ]
+    },
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
       "sha512": "9kyFSIdN3T0qjDQ2R0HRXYIhS3l5psBzQi6qqhdLz+SzFyEy4sVxNOke+yyYv8Cu8rPER12c3RDjLT8wF3WBYQ==",
       "type": "package",
@@ -2024,6 +2061,7 @@
       "AutoMapper >= 12.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.0",
       "Microsoft.AspNetCore.Session >= 2.2.0",
+      "NLog >= 5.1.4",
       "System.Data.SQLite >= 1.0.116"
     ]
   },
@@ -2033,11 +2071,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\isa_s\\OneDrive\\Desktop\\Nueva carpeta\\Taller2-Práctica\\ServicioDeCadeteria\\CadeteriaWeb\\CadeteriaWeb.csproj",
+      "projectUniqueName": "C:\\Users\\isa_s\\OneDrive\\Desktop\\Nueva carpeta\\Taller2-Práctica\\ServicioDeCadeteria\\CadeteriaWeb\\CadeteriaWeb.csproj",
       "projectName": "CadeteriaWeb",
-      "projectPath": "c:\\Users\\isa_s\\OneDrive\\Desktop\\Nueva carpeta\\Taller2-Práctica\\ServicioDeCadeteria\\CadeteriaWeb\\CadeteriaWeb.csproj",
+      "projectPath": "C:\\Users\\isa_s\\OneDrive\\Desktop\\Nueva carpeta\\Taller2-Práctica\\ServicioDeCadeteria\\CadeteriaWeb\\CadeteriaWeb.csproj",
       "packagesPath": "C:\\Users\\isa_s\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\isa_s\\OneDrive\\Desktop\\Nueva carpeta\\Taller2-Práctica\\ServicioDeCadeteria\\CadeteriaWeb\\obj\\",
+      "outputPath": "C:\\Users\\isa_s\\OneDrive\\Desktop\\Nueva carpeta\\Taller2-Práctica\\ServicioDeCadeteria\\CadeteriaWeb\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\isa_s\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -2075,6 +2113,10 @@
           "Microsoft.AspNetCore.Session": {
             "target": "Package",
             "version": "[2.2.0, )"
+          },
+          "NLog": {
+            "target": "Package",
+            "version": "[5.1.4, )"
           },
           "System.Data.SQLite": {
             "target": "Package",

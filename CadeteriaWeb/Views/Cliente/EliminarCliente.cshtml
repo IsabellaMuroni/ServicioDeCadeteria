@@ -1,0 +1,22 @@
+@model CadeteriaWeb.ViewModels.Cliente.EliminarClienteViewModel;
+
+@{
+    ViewData["Title"] = "Eliminar Cliente";
+}
+
+<div class="container-md">
+
+  <p class="card-text">¿Está seguro que quiere eliminar a <strong>@Model.Nombre</strong> | ID: <strong>@Model.Id</strong>?.</p>
+        <form class="row g-3" asp-action = "DeleteCliente" class="form-row align-items-center">
+
+          <input type="hidden" name = "Id" asp-for = "Id"/>
+                  
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button class="btn-confirm" type="submit">Eliminar</button>
+              <a asp-action = "Cliente" class = "btn-cancel">Cancelar</a>
+            </div>
+                    
+                  
+        </form>
+        
+</div>

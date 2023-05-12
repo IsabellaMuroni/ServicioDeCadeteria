@@ -1,5 +1,6 @@
 using CadeteriaWeb.Repositories;
 using CadeteriaWeb.Interfaces;
+using NLog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,7 @@ builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddSingleton<ICadenaDeConexionRepository, ConexionSQLiteRepository>();
 builder.Services.AddTransient<ICadeteRepository, CadeteRepository>();
 builder.Services.AddTransient<IUsuarioRepository, UsuarioRepository>();
+builder.Services.AddTransient<IClienteRepository, ClienteRepository>();
 
 //Código para sesiones
 builder.Services.AddDistributedMemoryCache();

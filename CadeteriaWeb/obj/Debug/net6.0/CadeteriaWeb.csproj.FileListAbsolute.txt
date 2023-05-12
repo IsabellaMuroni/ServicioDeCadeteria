@@ -163,3 +163,5 @@ C:\Users\isa_s\OneDrive\Desktop\Nueva carpeta\Taller2-Práctica\ServicioDeCadete
 C:\Users\isa_s\OneDrive\Desktop\Nueva carpeta\Taller2-Práctica\ServicioDeCadeteria\CadeteriaWeb\obj\Debug\net6.0\CadeteriaWeb.pdb
 C:\Users\isa_s\OneDrive\Desktop\Nueva carpeta\Taller2-Práctica\ServicioDeCadeteria\CadeteriaWeb\obj\Debug\net6.0\CadeteriaWeb.genruntimeconfig.cache
 C:\Users\isa_s\OneDrive\Desktop\Nueva carpeta\Taller2-Práctica\ServicioDeCadeteria\CadeteriaWeb\obj\Debug\net6.0\ref\CadeteriaWeb.dll
+C:\Users\isa_s\OneDrive\Desktop\Nueva carpeta\Taller2-Práctica\ServicioDeCadeteria\CadeteriaWeb\bin\Debug\net6.0\nlog.config
+C:\Users\isa_s\OneDrive\Desktop\Nueva carpeta\Taller2-Práctica\ServicioDeCadeteria\CadeteriaWeb\bin\Debug\net6.0\NLog.dll

@@ -6,12 +6,16 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CadeteriaWeb.ViewModels.Cliente
 {
-    public class AltaClienteViewModel
+    public class MostrarClientesViewModel
     {
+        public int Id { get; set; }
+        [Required]
         public string Nombre { get; set; }
-        //public string Apellido { get; set; }
+        [Required]
         public string Direccion { get; set; }
+        [Required]
         public int Telefono { get; set; }
+        [Required]
         public string DatosReferenciaDireccion { get; set; }
 
     }
